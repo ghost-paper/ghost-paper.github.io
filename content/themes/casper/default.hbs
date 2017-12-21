@@ -29,6 +29,7 @@
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
                 <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
+<<<<<<< HEAD
                 {{!--
                 <nav class="site-footer-nav">
                     <a href="{{@blog.url}}">Home</a>
@@ -37,6 +38,18 @@
                     <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
                 </nav>
                 --}}
+=======
+                <nav class="site-footer-nav">
+                    <a href="{{@blog.url}}">Latest Posts</a>
+                    {{#if @blog.facebook}}<a href="{{facebook_url @blog.facebook}}" target="_blank" rel="noopener">Facebook</a>{{/if}}
+                    {{#if @blog.twitter}}<a href="{{twitter_url @blog.twitter}}" target="_blank" rel="noopener">Twitter</a>{{/if}}
+                   
+                    {{!-- disable link to ghost
+                    <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
+                    --}}
+                    
+                </nav>
+>>>>>>> 3bee31d08d939fc2d838607c2d4e1fd5dacff618
             </div>
         </footer>
 
